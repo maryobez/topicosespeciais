@@ -2,15 +2,27 @@ package fvs.edu.dominio;
 
 import java.io.Serializable;
 
-public class Aluno implements Serializable  {		
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+
+public class Aluno implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue
+
 	private Integer id;
 	private String nome;
 	private String cpf;
 	private String rg;
 	private Integer matricula;
 	
+	public Aluno() {
+		
+	}
 	
 	public Aluno(Integer id, String nome, String cpf, String rg, Integer matricula) {
 		super();
@@ -27,8 +39,8 @@ public class Aluno implements Serializable  {
 	public String toString() {
 		return "Aluno [id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", rg=" + rg + ", matricula=" + matricula + "]";
 	}
-	
-	
+
+
 
 	public Integer getId() {
 		return id;
@@ -139,5 +151,4 @@ public class Aluno implements Serializable  {
 	}
 	
 	
-
 }
