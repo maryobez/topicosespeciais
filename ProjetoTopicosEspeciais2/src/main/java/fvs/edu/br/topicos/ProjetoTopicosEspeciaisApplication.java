@@ -4,9 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjetoTopicosEspeciais2Application {
+public class ProjetoTopicosEspeciaisApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjetoTopicosEspeciais2Application.class, args);
+		SpringApplication.run(ProjetoTopicosEspeciaisApplication.class, args);
+		
+		
 	}
 }
